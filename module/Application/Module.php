@@ -28,7 +28,8 @@ class Module
         $I_sm = $I_application->getServiceManager();
         $I_mailService = $I_sm->get('Application\Service\MailService');
         $I_sharedEventManager->attach('Events\Service\EventService', 'event_saved', array($I_mailService, 'logEventSaved'));
-        
+
+/*
         // Common Error Handling Code
         $I_eventManager->attach(MvcEvent::EVENT_DISPATCH_ERROR, function($e) {
         
@@ -53,7 +54,7 @@ class Module
             }
              
         });
-        
+ */       
     }
 
     public function getConfig()

@@ -12,7 +12,4 @@
  */
 
 return array(
-    'abstract_factories' => array(
-        'Zend\\Db\\Adapter\\AdapterAbstractServiceFactory',
-    ),
 );
